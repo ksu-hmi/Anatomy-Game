@@ -12,4 +12,4 @@ digest_prompts = [
 ]
 
 # need to come up with incorrect answers for the multiple choice questions
-# 1-D, 2-T, 3-A, 4-F, 5-B, 6-T, 7-C, 8-F, 9-D, 10-F"
+# 1-D, 2-T, 3-A, 4-F, 5-B, 6-T, 7-C, 8-F, 9-D, 10-F
