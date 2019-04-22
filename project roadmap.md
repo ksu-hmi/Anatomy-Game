@@ -5,7 +5,7 @@
 5.  Complete 10 questions on the digestive system.  (Yasmin) - DONE.
 6.  Complete 10 questions on the endocrine system.  (Yasmin) - 
 7.  Complete 10 questions on the immune system.  (Yasmin) - 
-8.  Complete 10 questions on the lympahtic system.  (Rachel)  - 
+8.  Complete 10 questions on the lymphatic system.  (Rachel)  - 
 9.  Complete 10 questions on the nervous system.  (Yasmin) - 
 10. Complete 10 questions on the muscular system.  (Rachel) - 
 11. Complete 10 questions on the reproductive system.  (Yasmin) - 
