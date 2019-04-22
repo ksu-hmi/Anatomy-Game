@@ -9,8 +9,8 @@
 9.  Complete 10 questions on the nervous system.  (Yasmin) - 
 10. Complete 10 questions on the muscular system.  (Rachel) - 
 11. Complete 10 questions on the reproductive system.  (Yasmin) - 
-12. Complete 10 questions on the skeletal system.  (Rachel) - 
-13. Complete 10 questions on the integumentary system. (Rachel) - 
+12. Complete 10 questions on the skeletal system.  (Rachel) - DONE.
+13. Complete 10 questions on the integumentary system. (Rachel) - DONE.
 14. Incorporate questions into the code.  (Rachel & Yasmin) - 
 15. Run and test code then debug, as needed.  (Rachel) - 
 16. Prepare powerpoint to present game to class.  (Rachel & Yasmin) - 
