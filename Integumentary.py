@@ -20,5 +20,5 @@ answer6 = ("dermis")
 answer7 = ("hypodermis")
 answer8 = ("true")
 answer9 = ("false")
-\\\\answer to 9 = dermis\\\\
+### Answer 9 = dermis. ###
 answer10 = ("dermatologists")
