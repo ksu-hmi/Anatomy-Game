@@ -13,7 +13,7 @@ question10 = ("What are the medical specialists responsible for treating the ent
 
 answer1 = ("206")
 answer2 = ("false")
-\\\answer to 2: 300 bones\\\
+### Answer2: 300 bones. ###
 answer3 = ("teeth")
 answer4 = ("false")
 answer5 = ("bone marrow")
