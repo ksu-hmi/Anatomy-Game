@@ -7,7 +7,7 @@ question6 = ("True or False:\nSmall amounts of urine are emptied into the bladde
 question7 = ("What does the bladder do?\n(a) Force urine away from the kidneys.\n(b) Stores urine until the brain signals the bladder that the person is ready to empty it.\n(c) Removes urea from the blood.\n(d) Prevents leakage into the urethra.\n")
 question8 = ("True or False:\nCircular muscles called sphincters close tightly around the opening of the bladder to prevent leakage into the urethra.\n")
 question9 = ("Which of the following are NOT diseases of the urinary system?\n(a) Interstitial cystitis\n(b) Arteriosclerosis\n(c)Kidney Stones\n(d) Urinary tract infections\n")
-question10 = ("True or False:\nNephrologists treat problems of urinary tract.\n")
+question10 = ("True or False:\nNephrologists treat problems of the urinary tract.\n")
 
 answer1 = ("kidneys")
 answer2 = ("true")
