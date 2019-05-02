@@ -1,18 +1,10 @@
-##### THIS IS THE QUIZGAME ########################
+### HUMAN ANATOMY QUIZ GAME ###
 
-
-##### QUESTION ZONE ###############################################
-
-##### here are all variables of the questions.
-## if you add more or delete some, just update the list "questions"
-
-    
-##### this is the list of questions separated by category (i.e. body systems)
-
-#questions = [question1, question2, question3, question4, question5, question6, question7, question8]
+## QUESTIONS (this is the list of questions separated by category (i.e. body systems)
+# questions = [question1, question2, question3, question4, question5, question6, question7, question8]
 
 questions = [
-    ### CIRCULATORY SYSTEM QUESTIONS ###
+    ## 1 - CIRCULATORY SYSTEM QUESTIONS ##
     [ "What makes up the cardiovascular component of the circulatory system?\n" ,
     "True or False: the aorta carries oxygenated blood from the heart to the organs and tissues.\n" ,
     "In addition to blood, what else does the circulatory system move throughout the body?\n" ,
@@ -24,7 +16,7 @@ questions = [
     "Blood is made up of plasma, red blood cells, white blood cells, and what else?\n" ,
     "True or False: hypertension is one of the most common diseases of the circulatory system.\n"],
     
-    ###DIGESTIVE SYSTEM QUESTIONS ###
+    ## 2 - DIGESTIVE SYSTEM QUESTIONS ##
     ["Where does the digestive system begin?\n" ,
     "True or False: peristalsis is a series of muscle contractions that transports food from the esophagus through to the rest of the digestive system.\n" ,
     "Where does the digestive system end?\n" ,
@@ -36,7 +28,7 @@ questions = [
     "What is responsible for the storage and fermentation of indigestible matter?\n" ,
     "True or False: the parts of the colon are the ascending colon, the transverse colon, the rising colon, the descending colon, and the sigmoid colon.\n"],
     
-    ### ENDOCRINE SYSTEM QUESTIONS ###
+    ## 3 - ENDOCRINE SYSTEM QUESTIONS ##
     ["What is the biggest/largest part of the pituitary gland?\n",
     "True or False: the endocrine system is made up of the pituitary gland, the thyroid gland, the parathyroid gland, adrenal glands, pancreas, and the ovaries (for females) or the testes (for males).\n",
     "Where is the pituitary gland located?\n" ,
@@ -48,7 +40,7 @@ questions = [
     "Which hormones are produced by the pancreas?\n" ,
     "True or False: the most common endocrine disease in the United States is diabetes.\n"],
     
-    ### IMMUNE SYSTEM QUESTIONS ###
+    ## 4 - IMMUNE SYSTEM QUESTIONS ##
     ["Which part of the immune system produce and store cells that fight infection and disease?\n",
     "True or False: leukocytes are red blood cells that identify and eliminate pathogens.\n",
     "What is the best way to diagnose immune deficiencies?\n",
@@ -60,7 +52,7 @@ questions = [
     "Which system is also a part of the immune system?\n",
     "True or False: adaptive immunity forgets threats to the body (such as viruses, bacteria, and parasites) to make future responses more efficient.\n"],
 
-    ### INTEGUMENTARY SYSTEM QUESTIONS ###
+    ## 5 - INTEGUMENTARY SYSTEM QUESTIONS ##
     ["Skin accounts for what percentage of total body weight?\n",
     "True or False: Skin is the body's largest organ.\n",
     "What are the three main layers of skin tissue?\n",
@@ -72,7 +64,7 @@ questions = [
     "True or False: The lymphatic vessels, which drain fluid from the tissues, are housed in the hypodermis.\n",
     "Physicians who specialize in treating disesases, disorders, and injuries of the skin, hair, and nails are called?\n"],   
     
-    ### LYMPHATIC SYSTEM QUESTIONS ###
+    ## 6 - LYMPHATIC SYSTEM QUESTIONS ##
     ["True or False: The lymphatic system is a network of tissues and organs that help rid the body of toxins, waste, and other unwanted materials. \n",
     "What is the name of the clear, colorless fluid transported by the lymphatic system that contains infection-fighting white blood cells?\n",
     "Located on the left side of the body just above the kidney, what organ acts as a blood filter?\n",
@@ -84,7 +76,7 @@ questions = [
     "Which medical specialists typically treat disesase and disorders of the lymphatic system?\n",
     "How many drainage areas does the lymphatic system have in which to clear different parts of the body?\n"],
 
-    ### MUSCULAR SYSTEM QUESTIONS ###
+    ## 7 - MUSCULAR SYSTEM QUESTIONS ##
     ["How many muscles are there in the adult human muscular system?\n",
     "What are the 3 types of muscles?\n",
     "Which of the 3 muscle types consist of the only voluntary muscle tissue, controlling every action that a person consciously performs?\n",
@@ -96,7 +88,7 @@ questions = [
     "What is the hardest working muscle, pumping at least 2,500 gallons of blood per day?\n",
     "True or False: There is no single type of doctor that treats muscular disesases and disorders.\n"],
 
-    ### NERVOUS SYSTEM QUESTIONS ###
+    ## 8 - NERVOUS SYSTEM QUESTIONS ##
     ["What are the specialists who study the nervous system are called?\n",
     "True or False: the nervous system consists of the primary nervous system and the peripheral nervous system.\n",
     "The central nervous system consists of the nerves, the brain, and what else?\n",
@@ -108,19 +100,7 @@ questions = [
     "Neurons send signals to other cells through thin fibers called what?\n",
     "True or False: sensory neurons react to emotional stimuli.\n"],
     
-    ### RESPIRATORY SYSTEM QUESTIONS ###
-    ["What are the primary organs of the respiratory system, responsible for carrying out the exchange of gases as we breathe?\n",
-    "The human respiratory system is a series of organs responsible for taking in oxygen and expelling what other gas?\n",
-    "True or False: Brain cells being dying after about 4 minutes without oxygen.\n",
-    "What is a newborn's normal breathing rate per minute?\n",
-    "Also known as the windpipe, what filters the air that is inhaled?\n",
-    "True or False: The left lung has 3 lobes, while the right lung has 2.\n", ### The left lung has 2 to accommodate the heart ###
-    "Where does the exhange of oxygen and carbon dioxide occur?\n",
-    "What is the name of the dome-shaped muscle at the bottom of the lungs that controls breathing?\n",
-    "What condition causes coughing, wheezing, and shortness of breath due to inflammation of the lung airways?\n",
-    "What medical specialists treat conditions of the respiratory system?\n"],
-
-       ### REPRODUCTIVE SYSTEM QUESTIONS ###
+    ## 9 - REPRODUCTIVE SYSTEM QUESTIONS ##
     ["When fertilization occurs, sperm must enter through what part of the female reproductive system, in order to burrow into the egg?\n",
     "True or False: Bartholin's gland is a part of the female reproductive structure.\n",
     "Which part of the male reproductive system is responsible for sperm production?\n",
@@ -132,7 +112,19 @@ questions = [
     "Which specialists typically oversee disorders in the male reproductive system?\n",
     "True or False: the only way to screen for cervical cancer is through Pap tests/smears.\n"],
 
-    ### SKELETAL SYSTEM QUESTIONS ###
+    ## 10 - RESPIRATORY SYSTEM QUESTIONS ##
+    ["What are the primary organs of the respiratory system, responsible for carrying out the exchange of gases as we breathe?\n",
+    "The human respiratory system is a series of organs responsible for taking in oxygen and expelling what other gas?\n",
+    "True or False: Brain cells being dying after about 4 minutes without oxygen.\n",
+    "What is a newborn's normal breathing rate per minute?\n",
+    "Also known as the windpipe, what filters the air that is inhaled?\n",
+    "True or False: The left lung has 3 lobes, while the right lung has 2.\n", ### The left lung has 2 to accommodate the heart ###
+    "Where does the exhange of oxygen and carbon dioxide occur?\n",
+    "What is the name of the dome-shaped muscle at the bottom of the lungs that controls breathing?\n",
+    "What condition causes coughing, wheezing, and shortness of breath due to inflammation of the lung airways?\n",
+    "What medical specialists treat conditions of the respiratory system?\n"],
+
+    ## 11 - SKELETAL SYSTEM QUESTIONS ##
     ["How many bones are there in the adult human skeletal system?\n",
     "True or False: Human infants are born with about 400 bones.\n",
     "What are considered part of the skeletal system, although not counted as bones?\n",
@@ -144,7 +136,7 @@ questions = [
     "What is the longest and strongest bone with the most powerful muscles attached to it?\n",
     "What are the medical specialists responsible for treating the entire skeletal system?\n"],
     
-    ### URINARY SYSTEM QUESTIONS ####
+    ## 12 - URINARY SYSTEM QUESTIONS ###
     ["What are the primary organ(s) of the urinary system?\n",
     "True or False: The urinary system is also known as the renal system.\n",
     "The kidneys remove urea from the blook through small filtering units called?\n",
@@ -156,55 +148,60 @@ questions = [
     "Which of the following is NOT a disease of the urinary system?\n(a) Interstitial cystitis\n(b) Arteriosclerosis\n(c)Kidney Stones\n(d) Urinary tract infections\n",
     "True or False: Nephrologists treat problems of the urinary tract.\n"],
 ]
+
+## ANSWERS ##
+# VIP: if you make changes in the question zone, don't forget to synchronise this zone (the variable and the list)!
+
 answers = [
-    ### CIRCULATORY SYSTEM ANSWERS ###
+    ## 1 - CIRCULATORY SYSTEM ANSWERS ##
     ["heart, blood, blood vessels",
      "true",
     "lymph",
-    "false", ## 5-6 quarts##
+    "false", # 5-6 quarts #
     "cardiologists",
-    "false",  ## it enters into the right ventricle ##
+    "false",  # it enters into the right ventricle #
     "arteries",
     "true",
     "platelets",
     "true"],
-    ### DIGESTIVE SYSTEM ANSWERS ###
+    
+    ## 2 - DIGESTIVE SYSTEM ANSWERS ##
     ["mouth",
     "true",
     "anus",
-    "false", ## hydrochloric acid and pepsin ###
+    "false", # hydrochloric acid and pepsin ##
     "glycogen",
-    "false", ## liver ###
+    "false", # liver #
     "colonoscopy",
-    "false", ## salivary amylase ###
+    "false", # salivary amylase #
     "large intestine",
-    "false"], ## there is no rising colon ###
+    "false"], # there is no rising colon #
 
-    ### ENDOCRINE SYSTEM ANSWERS ###
+    ## 3 - ENDOCRINE SYSTEM ANSWERS ##
     ["frontal lobe",
     "true", 
     "brain",
-    "false", ## two ###
+    "false", # two #
     "calcitonin, T4, and T3",
-    "false", ## adrenal gland ###
+    "false", # adrenal gland ##
     "calcium",
-    "false", ## every organ and cell in the body ###
+    "false", # every organ and cell in the body #
     "insulin and glucagon",
     "true"],
 
-    ### IMMUNE SYSTEM ANSWERS ###
+    ## 4 - IMMUNE SYSTEM ANSWERS ##
     ["lymph nodes",
-    "false", ## white blood cells ###
+    "false", # white blood cells #
     "blood tests",
-    "false", ## autoimmune diseases ###
+    "false", # autoimmune diseases #
     "corticosteroids",
     "true",
     "monoclonal",
     "true",
     "lymphatic",
-    "false"], ## it remembers threats ###
+    "false"], # it remembers threats #
 
-    ### INTEGUMENTARY SYSTEM ANSWERS ###
+    ## 5 - INTEGUMENTARY SYSTEM ANSWERS ##
     ["16",
     "true",
     "epidermis, dermis, and hypodermis",
@@ -213,10 +210,10 @@ answers = [
     "dermis",
     "hypodermis",
     "true",
-    "false", ### dermis ###
+    "false", # dermis #
     "dermatologists"],
 
-    ### LYMPHATIC SYSTEM ANSWERS ###
+    ## 6 - LYMPHATIC SYSTEM ANSWERS ##
     ["true",
     "lymph",
     "spleen",
@@ -224,11 +221,11 @@ answers = [
     "tonsils",
     "thymus",
     "gallbladder",
-    "false",   #### Lymph flows in only one direction-upward toward the neck. ###
+    "false", # lymph flows in only one direction-upward toward the neck #
     "immunologists",
     "2"],
 
-    ### MUSCULAR SYSTEM ANSWERS ###
+    ## 7 - MUSCULAR SYSTEM ANSWERS ##
     ["650",
     "skeletal, smooth, and cardiac",
     "skeletal",
@@ -240,31 +237,31 @@ answers = [
     "heart",
     "true"],
 
-    ### NERVOUS SYSTEM ANSWERS ###
+    ## 8 - NERVOUS SYSTEM ANSWERS ##
     ["neurologists",
-    "false", ## central nervous system and peripheral nervous system ###
+    "false", # central nervous system and peripheral nervous system #
     "spinal cord",
     "true",
     "motor neurons",
-    "false", ## somatic and autonomic ###
+    "false", # somatic and autonomic #
     "glial cells",
-    "false" ## 100 trillion ###
+    "false", # 100 trillion #
     "axons",
-    "false"], ## physical stimuli ###
-
-    ### REPRODUCTIVE SYSTEM ANSWERS ###
+    "false"], # physical stimuli #
+    
+    ## 9 - REPRODUCTIVE SYSTEM ANSWERS ##
     ["fallopian tube",
     "true",
     "testes",
-    "false", ## morphogenesis ###
+    "false", # morphogenesis #
     "azoospermia",
     "true",
     "intersex",
-    "false", ## cervix ###
+    "false", # cervix #
     "urologists",
-    "false"], ## pap tests/smears and HPV tests ###
+    "false"], # pap tests/smears and HPV tests #
 
-    ### RESPIRATORY SYSTEM ANSWERS ###
+    ## 10 - RESPIRATORY SYSTEM ANSWERS ##
     ["lungs",
     "carbon dioxide",
     "true",
@@ -276,9 +273,9 @@ answers = [
     "asthma",
     "pulmonologists"],
 
-    ### SKELETAL SYSTEM ANSWERS ###
+    ## 11 - SKELETAL SYSTEM ANSWERS ##
     ["206",
-    "false", ### 300 bones ###
+    "false", # 300 bones #
     "teeth",
     "false",
     "bone marrow",
@@ -288,39 +285,24 @@ answers = [
     "femur",
     "orthopedics"],
 
-    ### URINARY SYSTEM ANSWERS ###
+    ## 12 - URINARY SYSTEM ANSWERS ##
     ["kidneys",
     "true",
     "nephrons",
-    "false", ### 1/2 liter ###
+    "false", # 1/2 liter #
     "d",
     "true",
     "b",
     "true",
     "b",
-    "false"] ### answer = urologists...nephrologists treat diseases of the kidney ###
+    "false"] # answer = urologists...nephrologists treat diseases of the kidney #
 ]  
 
-##### ANSWER ZONE ################################################
-## if you make changes in the question zone, don't forget to syncronise this zone (the variable and the list)!!!! 
+## CATEGORIES ##
 
-##### here are all variables of the answers. 
+categories = ["1. circulatory" ,  "2. digestive" , "3. endocrine" , "4. immune" , "5. integumentary" , "6. lymphatic" , "7. muscular" , "8. nervous" ,  "9. reproductive" , "10. respiratory" , "11. skeletal" ,  "12. urinary"]
 
-
-    
-##### this is the list of answers seperated by categories ###
-
-
-
-
-### CATEGORIES ######
-
-categories =["1: circulatory" ,  "2: digestive" , "3. endocrine" , "4. immune" , "5. integumentary" , "6. lymphatic" , "7. muscular" , "8. nervous" ,  "9. reproductive" , "10. respiratory" , "11. skeletal" ,  "12. urinary"]
-
-
-
-##### GLOBAL GAME SETTINGS ###############################################
-
+## GLOBAL GAME SETTINGS ##
 
 points = 0
 name = None
@@ -328,8 +310,7 @@ yes = ['Yes', 'yes', 'YES']
 no = ['No', 'no', 'NO']
 category = 0
 
-
-##### RESET ZONE #########################################################
+## RESET ZONE ##
 
 def game_reset():
     '''
@@ -341,40 +322,37 @@ def game_reset():
 
     points = 0
     name = None
-#end-function#
-    
 
-##### GAME INTRO ZONE ####################################################
+# end-function #
+
+## GAME INTRO ZONE ##
 
 def game_intro():
     '''
     Welcome the player and ask him for his name as long as he thinks is correct.
     '''
 
-    print("\n       ------ !! Welcome to the Anatomy Trivia Game !! ------\n")
+    print("\n       ------ !! Welcome to the Human Anatomy Trivia Game !! ------\n")
     
     global name
     global category
 
     while name == None:
         name = input("What's your name? ")
-        print("Your name is", name)
-        correct = input("Is that correct? ")
+        print("Welcome, "+name+", to the Human Anatomy Trivia Game!")
+        correct = input("Did we get your name right? ")
         if yes.count(correct) == True: ##"Yes" or ok == "yes" or ok == "YES":
             print("Perfect, let's move on!\n")
         else:
-            print("Mh? Try again and confirm with Yes!")
+            print("Eh? Try again and confirm with Yes!")
             name = None
 
         list_categories() 
         start_system()
 
-
-#end-function#
+# end-function #
             
-
-##### GAME PLAY ZONE #####################################################
-
+## GAME PLAY ZONE ##
 
 def print_play_status(x):
     '''
@@ -384,12 +362,12 @@ def print_play_status(x):
     global points
     print("At the moment your total points are", points)
     print("Challenge", x+1, "\n")
-#end-function#
 
+# end-function #
 
 def start_system() : 
 
-    system = int(input("Pick a category by typing a number: 1-12\n"))
+    system = int(input("Pick a category by typing a number between 1-12.  Type 0 to end the game.\n"))
     if system == 1:
         print("Let's get to the heart of the matter...the circulatory system!")
         start_category(system)
@@ -426,8 +404,11 @@ def start_system() :
     elif system == 12:
         print("Gotta go right now...to the urinary system.")
         start_category(system)
+    elif system == 0:
+        print("See you next time!")
+        game_end()
     else:
-        print("Well, that didn't work.  Try that again with a number 1-12.")
+        print("Well, that didn't work.  Try that again with a number between 1-12.")
         system = None
 
 def start_category(cat) : 
@@ -437,19 +418,15 @@ def start_category(cat) :
     
 def list_categories() : 
     
-  #loop through categories array and print categories
+  # loop through categories array and print categories #
   for c in categories : 
       print(c)
-      
-      
-
 
 def play_quest(x):
     '''int -> int
     this functions asks the player question X, checks if player's answer is right and eventually changes the variable points.
     no examples needed
     '''
-    
     global points
  
     answerPlayer = input(questions[category - 1][x])
@@ -458,23 +435,22 @@ def play_quest(x):
         points +=10
     else:
         print("Wrong! 0 points gained, the correct answer was:", answers[category - 1][x], ". Next question...\n")
-#end-function#
-        
+
+# end-function #
 
 def game_play():
     '''
     first : tell the player his current score and the current challenge number
     second: tell the play_quest-function how many and which questions it must asks the player.
     '''
-    
+   
     for x in range(len(questions[category - 1])):
         print_play_status(x)
         play_quest(x)
-#end-function#
 
+# end-function #
 
-##### GAME END ZONE ########################################################
-
+## GAME END ZONE ##
 
 def game_end():
     '''
@@ -502,11 +478,10 @@ def game_end():
         else:
             print("oh, just yes or no!")
             again = None
-#end-function#
-        
-    
-##### GAME CONTROL ZONE ####################################################
 
+# end-function #
+    
+## GAME CONTROL ZONE ##
 
 def game_control():
     '''
@@ -515,14 +490,13 @@ def game_control():
     game_reset()
     game_intro()
     
-    #start_system()
-    
-   # game_play()
-   # game_end()
-#end-function#
+    start_system()
+   
+    game_play()
+    game_end()
 
+# end-function #
 
-##### FIRST GAME START ZONE ################################################
-
+## FIRST GAME START ZONE ##
 
 game_control()
