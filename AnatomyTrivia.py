@@ -120,7 +120,7 @@ questions = [
     "What condition causes coughing, wheezing, and shortness of breath due to inflammation of the lung airways?\n",
     "What medical specialists treat conditions of the respiratory system?\n"],
 
-       ### REPRODUCTIVE SYSTEM QUESTIONS ###
+    ### REPRODUCTIVE SYSTEM QUESTIONS ###
     ["When fertilization occurs, sperm must enter through what part of the female reproductive system, in order to burrow into the egg?\n",
     "True or False: Bartholin's gland is a part of the female reproductive structure.\n",
     "Which part of the male reproductive system is responsible for sperm production?\n",
@@ -155,6 +155,7 @@ questions = [
     "True or False: Circular muscles called sphincters close tightly around the opening of the bladder to prevent leakage into the urethra.\n",
     "Which of the following is NOT a disease of the urinary system?\n(a) Interstitial cystitis\n(b) Arteriosclerosis\n(c)Kidney Stones\n(d) Urinary tract infections\n",
     "True or False: Nephrologists treat problems of the urinary tract.\n"],
+    
 ]
 answers = [
     ### CIRCULATORY SYSTEM ANSWERS ###
@@ -248,21 +249,9 @@ answers = [
     "motor neurons",
     "false", ## somatic and autonomic ###
     "glial cells",
-    "false" ## 100 trillion ###
+    "false", ## 100 trillion ###
     "axons",
     "false"], ## physical stimuli ###
-
-    ### REPRODUCTIVE SYSTEM ANSWERS ###
-    ["fallopian tube",
-    "true",
-    "testes",
-    "false", ## morphogenesis ###
-    "azoospermia",
-    "true",
-    "intersex",
-    "false", ## cervix ###
-    "urologists",
-    "false"], ## pap tests/smears and HPV tests ###
 
     ### RESPIRATORY SYSTEM ANSWERS ###
     ["lungs",
@@ -275,6 +264,18 @@ answers = [
     "diaphragm",
     "asthma",
     "pulmonologists"],
+
+    ### REPRODUCTIVE SYSTEM ANSWERS ###
+    ["fallopian tube",
+    "true",
+    "testes",
+    "false", ## morphogenesis ###
+    "azoospermia",
+    "true",
+    "intersex",
+    "false", ## cervix ###
+    "urologists",
+    "false"], ## pap tests/smears and HPV tests ###
 
     ### SKELETAL SYSTEM ANSWERS ###
     ["206",
@@ -299,8 +300,7 @@ answers = [
     "true",
     "b",
     "false"] ### answer = urologists...nephrologists treat diseases of the kidney ###
-]  
-
+]
 ##### ANSWER ZONE ################################################
 ## if you make changes in the question zone, don't forget to syncronise this zone (the variable and the list)!!!! 
 
@@ -315,8 +315,22 @@ answers = [
 
 ### CATEGORIES ######
 
-categories =["1: circulatory" ,  "2: digestive" , "3. endocrine" , "4. immune" , "5. integumentary" , "6. lymphatic" , "7. muscular" , "8. nervous" ,  "9. reproductive" , "10. respiratory" , "11. skeletal" ,  "12. urinary"]
+categories =["circulatory" ,  "digestive" , "endocrine" , "immune" , "integumentary" , "lymphatic" , "muscular" , "nervous" ,  "respiratory"  ,  "reproductive" ,  "skeletal" ,  "urinary"]
+greetings = [
+            "Let's get to the heart of the matter...the circulatory system!" , 
+            "All about the gut...on to the digestive system!",
+            "This gland is your gland....on to the endocrine system!" , 
+            "Our hidden heroes...the immune system." , 
+            "The body's shield...the integumentary system!",
+            "The invisible system...the lymphatic system!" , 
+            "You think you're tough eh?...let's try the muscular system." ,
+            "Okay, brainiac...on to the nervous system." ,  
+            "Let's give the reproductive system a try." ,
+            "Take a deep breath, as we proceed to the respiratory system." ,
+            "You won't find these humerus...but on to the skeletal system." , 
+            "Gotta go right now...to the urinary system."
 
+            ]
 
 
 ##### GLOBAL GAME SETTINGS ###############################################
@@ -388,47 +402,9 @@ def print_play_status(x):
 
 
 def start_system() : 
-
     system = int(input("Pick a category by typing a number: 1-12\n"))
-    if system == 1:
-        print("Let's get to the heart of the matter...the circulatory system!")
-        start_category(system)
-    elif system == 2: 
-        print("All about the gut...on to the digestive system!")
-        start_category(system)
-    elif system == 3:
-        print("This gland is your gland....on to the endocrine system!")
-        start_category(system)
-    elif system == 4:
-        print("Our hidden heroes...the immune system.")
-        start_category(system)
-    elif system == 5:
-        print("The body's shield...the integumentary system!")
-        start_category(system)
-    elif system == 6:
-        print("The invisible system...the lymphatic system!")
-        start_category(system)
-    elif system == 7:
-        print("You think you're tough eh?...let's try the muscular system.")
-        start_category(system)
-    elif system == 8:
-        print("Okay, brainiac...on to the nervous system.")
-        start_category(system)
-    elif system == 9:
-        print ("Let's give the reproductive system a try.")
-        start_category(system)
-    elif system == 10: 
-        print("Take a deep breath, as we proceed to the respiratory system.")
-        start_category(system)
-    elif system == 11:
-        print("You won't find these humerus...but on to the muscular system.")
-        start_category(system)
-    elif system == 12:
-        print("Gotta go right now...to the urinary system.")
-        start_category(system)
-    else:
-        print("Well, that didn't work.  Try that again with a number 1-12.")
-        system = None
+    print(greetings[system - 1])
+    start_category(system)
 
 def start_category(cat) : 
     global category
@@ -439,25 +415,40 @@ def list_categories() :
     
   #loop through categories array and print categories
   for c in categories : 
-      print(c)
-      
-      
-
+      print(categories.index(c) + 1 , " : " , c)
 
 def play_quest(x):
+    global category
     '''int -> int
     this functions asks the player question X, checks if player's answer is right and eventually changes the variable points.
     no examples needed
     '''
     
     global points
- 
+    global questions
+    global answers
     answerPlayer = input(questions[category - 1][x])
     if answerPlayer.lower() == answers[category - 1][x]:
         print("Well done,", name + ", 10 points gained! Let's move to the next question.\n")
         points +=10
     else:
         print("Wrong! 0 points gained, the correct answer was:", answers[category - 1][x], ". Next question...\n")
+
+    last_cat = len(questions[category - 1])
+    if x == last_cat -1 : 
+        global categories
+        
+        global greetings
+        
+        categories.pop(category - 1)
+        greetings.pop(category - 1)
+        questions.pop(category - 1)
+        answers.pop(category - 1)
+        if len(categories) == 0 : 
+            game_end()
+        else:
+            list_categories() 
+            start_system()
 #end-function#
         
 
@@ -492,12 +483,12 @@ def game_end():
             print("\nEnjoy :)\n")
             game_control()
         elif no.count(again) == True:
-            print("For fresh ideas, new feautures, new questions/answers, graphics, please post or edit yourself at")
-            print("  https://github.com/eliosfederico/Python-trivia-game")
-            print("  https://class.coursera.org/programming1-2012-001/forum/thread?thread_id=1969")
-            print("                                                                              ")
-            print("                             Thanks for playing!")
-            print("                           ------ !! bye !! ------")
+            print("  Congratulations!  You've completed the game."  )
+            print("  https://github.com/ksu-hmi/Anatomy-Game"       )
+            print("                                                ")
+            print("                                                ")
+            print("         Thanks for playing!"                    )
+            print("       ------ !! bye !! ------                  ")
             
         else:
             print("oh, just yes or no!")
