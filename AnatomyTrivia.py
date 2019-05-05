@@ -361,7 +361,7 @@ def game_intro():
     Welcome the player and ask him for his name as long as he thinks is correct.
     '''
 
-    print("\n       ------ !! Welcome to the Anatomy Trivia Game !! ------\n")
+    print("\n       ------ !! Welcome to the Human Anatomy Trivia Game !! ------\n")
     
     global name
     global category
@@ -373,7 +373,7 @@ def game_intro():
         if yes.count(correct) == True: ##"Yes" or ok == "yes" or ok == "YES":
             print("Perfect, let's move on!\n")
         else:
-            print("Mh? Try again and confirm with Yes!")
+            print("Eh? Try again and confirm with Yes!")
             name = None
 
         list_categories() 
@@ -397,12 +397,13 @@ def print_play_status(x):
 
 
 def start_system() : 
-
-    system = int(input("Pick a category by typing a number: 1-12\n"))
-    print(greetings[system - 1])
-    start_category(system)
+    system = int(input("Pick a category by typing a number (0 to exit): 1-12\n"))
+      if system == 0 : 
+        game_end()
+    else :
+        print(greetings[system - 1])
+        start_category(system)
    
-
 def start_category(cat) : 
     global category
     category = cat
@@ -416,16 +417,13 @@ def list_categories() :
       print(categories.index(c) + 1 , " : " , c)
       
       
-
-
 def play_quest(x):
     global category
     '''int -> int
     this functions asks the player question X, checks if player's answer is right and eventually changes the variable points.
     no examples needed
     '''
-    
-    
+      
     global points
     global questions
     global answers
@@ -466,9 +464,7 @@ def game_play():
         play_quest(x)
 #end-function#
 
-
 ##### GAME END ZONE ########################################################
-
 
 def game_end():
     '''
@@ -486,12 +482,13 @@ def game_end():
             print("\nEnjoy :)\n")
             game_control()
         elif no.count(again) == True:
-            print("  Congratulations!  You've completed the game."  )
-            print("  https://github.com/ksu-hmi/Anatomy-Game"       )
-            print("                                                ")
-            print("                                                ")
-            print("         Thanks for playing!"                    )
-            print("       ------ !! bye !! ------                  ")
+            print("        Congratulations!  You've completed the game."      )
+            print("            https://github.com/ksu-hmi/Anatomy-Game"       )
+            print("  Questions generated from information gathered from livescience.com   ")
+            print("  at the following address:  https://www.livescience.com/health        ")
+            print("                                                         ")
+            print("                   Thanks for playing!"                    )
+            print("                ------ !! B Y E !! ------                  ")
             
         else:
             print("oh, just yes or no!")
