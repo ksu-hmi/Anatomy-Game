@@ -300,6 +300,7 @@ answers = [
 
 ### CATEGORIES ######
 
+
 categories =["circulatory" ,  "digestive" , "endocrine" , "immune" , "integumentary" , "lymphatic" , "muscular" , "nervous" ,  "reproductive" , "respiratory" ,  "skeletal" ,  "urinary"]
 greetings = [
             "Let's get to the heart of the matter...the circulatory system!" , 
