@@ -298,10 +298,23 @@ answers = [
     "false"] # answer = urologists...nephrologists treat diseases of the kidney #
 ]  
 
-## CATEGORIES ##
+### CATEGORIES ######
 
-categories = ["1. circulatory" ,  "2. digestive" , "3. endocrine" , "4. immune" , "5. integumentary" , "6. lymphatic" , "7. muscular" , "8. nervous" ,  "9. reproductive" , "10. respiratory" , "11. skeletal" ,  "12. urinary"]
-
+categories =["circulatory" ,  "digestive" , "endocrine" , "immune" , "integumentary" , "lymphatic" , "muscular" , "nervous" ,  "respiratory"  ,  "reproductive" ,  "skeletal" ,  "urinary"]
+greetings = [
+            "Let's get to the heart of the matter...the circulatory system!" , 
+            "All about the gut...on to the digestive system!",
+            "This gland is your gland....on to the endocrine system!" , 
+            "Our hidden heroes...the immune system." , 
+            "The body's shield...the integumentary system!",
+            "The invisible system...the lymphatic system!" , 
+            "You think you're tough eh?...let's try the muscular system." ,
+            "Okay, brainiac...on to the nervous system." ,  
+            "Let's give the reproductive system a try." ,
+            "Take a deep breath, as we proceed to the respiratory system." ,
+            "You won't find these humerus...but on to the skeletal system." , 
+            "Gotta go right now...to the urinary system."
+            ]
 ## GLOBAL GAME SETTINGS ##
 
 points = 0
@@ -322,7 +335,6 @@ def game_reset():
 
     points = 0
     name = None
-
 # end-function #
 
 ## GAME INTRO ZONE ##
@@ -344,7 +356,7 @@ def game_intro():
         if yes.count(correct) == True: ##"Yes" or ok == "yes" or ok == "YES":
             print("Perfect, let's move on!\n")
         else:
-            print("Eh? Try again and confirm with Yes!")
+            print("Eh?? Try again and confirm with Yes!")
             name = None
 
         list_categories() 
@@ -366,61 +378,25 @@ def print_play_status(x):
 # end-function #
 
 def start_system() : 
-
-    system = int(input("Pick a category by typing a number between 1-12.  Type 0 to end the game.\n"))
-    if system == 1:
-        print("Let's get to the heart of the matter...the circulatory system!")
-        start_category(system)
-    elif system == 2: 
-        print("All about the gut...on to the digestive system!")
-        start_category(system)
-    elif system == 3:
-        print("This gland is your gland....on to the endocrine system!")
-        start_category(system)
-    elif system == 4:
-        print("Our hidden heroes...the immune system.")
-        start_category(system)
-    elif system == 5:
-        print("The body's shield...the integumentary system!")
-        start_category(system)
-    elif system == 6:
-        print("The invisible system...the lymphatic system!")
-        start_category(system)
-    elif system == 7:
-        print("You think you're tough eh?...let's try the muscular system.")
-        start_category(system)
-    elif system == 8:
-        print("Okay, brainiac...on to the nervous system.")
-        start_category(system)
-    elif system == 9:
-        print ("Let's give the reproductive system a try.")
-        start_category(system)
-    elif system == 10: 
-        print("Take a deep breath, as we proceed to the respiratory system.")
-        start_category(system)
-    elif system == 11:
-        print("You won't find these humerus...but on to the muscular system.")
-        start_category(system)
-    elif system == 12:
-        print("Gotta go right now...to the urinary system.")
-        start_category(system)
-    elif system == 0:
-        print("See you next time!")
+    
+    system = int(input("Pick a category by typing a number (0 to exit) : 1-12\n"))
+    if system == 0 : 
         game_end()
-    else:
-        print("Well, that didn't work.  Try that again with a number between 1-12.")
-        system = None
-
+    else :
+        print(greetings[system - 1])
+        start_category(system)
+   
 def start_category(cat) : 
     global category
     category = cat
+    
     game_play()
     
 def list_categories() : 
     
   # loop through categories array and print categories #
   for c in categories : 
-      print(c)
+      print(categories.index(c) + 1 , " : " , c)
 
 def play_quest(x):
     '''int -> int
@@ -428,13 +404,29 @@ def play_quest(x):
     no examples needed
     '''
     global points
- 
+    global questions
+    global answers
     answerPlayer = input(questions[category - 1][x])
     if answerPlayer.lower() == answers[category - 1][x]:
         print("Well done,", name + ", 10 points gained! Let's move to the next question.\n")
         points +=10
     else:
         print("Wrong! 0 points gained, the correct answer was:", answers[category - 1][x], ". Next question...\n")
+    last_cat = len(questions[category - 1])
+    if x == last_cat -1 : 
+        global categories
+        
+        global greetings
+        
+        categories.pop(category - 1)
+        greetings.pop(category - 1)
+        questions.pop(category - 1)
+        answers.pop(category - 1)
+        if len(categories) == 0 : 
+            game_end()
+        else:
+            list_categories() 
+            start_system()
 
 # end-function #
 
@@ -468,12 +460,13 @@ def game_end():
             print("\nEnjoy :)\n")
             game_control()
         elif no.count(again) == True:
-            print("For fresh ideas, new feautures, new questions/answers, graphics, please post or edit yourself at")
-            print("  https://github.com/eliosfederico/Python-trivia-game")
-            print("  https://class.coursera.org/programming1-2012-001/forum/thread?thread_id=1969")
-            print("                                                                              ")
-            print("                             Thanks for playing!")
-            print("                           ------ !! bye !! ------")
+            print("        Congratulations!  You've completed the game."      )
+            print("            https://github.com/ksu-hmi/Anatomy-Game"       )
+            print("  Questions generated from information gathered from livescience.com   ")
+            print("  at the following address:  https://www.livescience.com/health        ")
+            print("                                                         ")
+            print("                   Thanks for playing!"                    )
+            print("                ------ !! B Y E !! ------                  ")
             
         else:
             print("oh, just yes or no!")
@@ -490,11 +483,10 @@ def game_control():
     game_reset()
     game_intro()
     
-    start_system()
+    #start_system()
    
-    game_play()
-    game_end()
-
+    #game_play()
+    #game_end()
 # end-function #
 
 ## FIRST GAME START ZONE ##
