@@ -1,17 +1,8 @@
 ### HUMAN ANATOMY QUIZ GAME ###
 
-
-##### QUESTION ZONE ###############################################
-
-##### here are all variables of the questions.
-## if you add more or delete some, just update the list "questions"
-
-    
-##### this is the list of questions separated by category (i.e. body systems)
-
-#questions = [question1, question2, question3, question4, question5, question6, question7, question8....]
 ## QUESTIONS (this is the list of questions separated by category (i.e. body systems)
 # questions = [question1, question2, question3, question4, question5, question6, question7, question8]
+
 questions = [
     ## 1 - CIRCULATORY SYSTEM QUESTIONS ##
     [ "What makes up the cardiovascular component of the circulatory system?\n" ,
@@ -110,7 +101,7 @@ questions = [
     "True or False: sensory neurons react to emotional stimuli.\n"],
     
     ## 9 - REPRODUCTIVE SYSTEM QUESTIONS ##
-     ["When fertilization occurs, sperm must enter through what part of the female reproductive system, in order to burrow into the egg?\n",
+    ["When fertilization occurs, sperm must enter through what part of the female reproductive system, in order to burrow into the egg?\n",
     "True or False: Bartholin's gland is a part of the female reproductive structure.\n",
     "Which part of the male reproductive system is responsible for sperm production?\n",
     "True or False: the fetus begins to take shape during a process called embryogenesis.\n",
@@ -121,7 +112,7 @@ questions = [
     "Which specialists typically oversee disorders in the male reproductive system?\n",
     "True or False: the only way to screen for cervical cancer is through Pap tests/smears.\n"],
 
-    ## 10 - RESPIRATORY SYSTEM QUESTIONS ###
+    ## 10 - RESPIRATORY SYSTEM QUESTIONS ##
     ["What are the primary organs of the respiratory system, responsible for carrying out the exchange of gases as we breathe?\n",
     "The human respiratory system is a series of organs responsible for taking in oxygen and expelling what other gas?\n",
     "True or False: Brain cells being dying after about 4 minutes without oxygen.\n",
@@ -152,11 +143,12 @@ questions = [
     "True or False: A normal, healthy bladder can hold up to 1 liter of urine comfortably for 2-5 hours.\n",
     "Which of the following are part of the renal system?\n(a) The urethra\n(b) The bladder\n(c) The kidneys\n(d) All of the above\n",
     "True or False: Small amounts of urine are emptied into the bladder from the ureters about every 10-15 seconds.\n",
-    "What organ stores urine until the brain signals the bladder that the person is ready to empty it?\n",
+    "What organ stores urine until the brain signals that it is ready to empty it?\n",
     "True or False: Circular muscles called sphincters close tightly around the opening of the bladder to prevent leakage into the urethra.\n",
     "Which of the following is NOT a disease of the urinary system?\n(a) Interstitial cystitis\n(b) Arteriosclerosis\n(c)Kidney Stones\n(d) Urinary tract infections\n",
     "True or False: Nephrologists treat problems of the urinary tract.\n"],
 ]
+
 ## ANSWERS ##
 # VIP: if you make changes in the question zone, don't forget to synchronise this zone (the variable and the list)!
 
@@ -165,48 +157,49 @@ answers = [
     ["heart, blood, blood vessels",
      "true",
     "lymph",
-    "false", ## 5-6 quarts##
+    "false", # 5-6 quarts #
     "cardiologists",
-    "false",  ## it enters into the right ventricle ##
+    "false",  # it enters into the right ventricle #
     "arteries",
     "true",
     "platelets",
     "true"],
+    
     ## 2 - DIGESTIVE SYSTEM ANSWERS ##
     ["mouth",
     "true",
     "anus",
-    "false", ## hydrochloric acid and pepsin ###
+    "false", # hydrochloric acid and pepsin ##
     "glycogen",
-    "false", ## liver ###
+    "false", # liver #
     "colonoscopy",
-    "false", ## salivary amylase ###
+    "false", # salivary amylase #
     "large intestine",
-    "false"], ## there is no rising colon ###
+    "false"], # there is no rising colon #
 
     ## 3 - ENDOCRINE SYSTEM ANSWERS ##
     ["frontal lobe",
     "true", 
     "brain",
-    "false", ## two ###
+    "false", # two #
     "calcitonin, T4, and T3",
-    "false", ## adrenal gland ###
+    "false", # adrenal gland ##
     "calcium",
-    "false", ## every organ and cell in the body ###
+    "false", # every organ and cell in the body #
     "insulin and glucagon",
     "true"],
 
     ## 4 - IMMUNE SYSTEM ANSWERS ##
     ["lymph nodes",
-    "false", ## white blood cells ###
+    "false", # white blood cells #
     "blood tests",
-    "false", ## autoimmune diseases ###
+    "false", # autoimmune diseases #
     "corticosteroids",
     "true",
     "monoclonal",
     "true",
     "lymphatic",
-    "false"], ## it remembers threats ###
+    "false"], # it remembers threats #
 
     ## 5 - INTEGUMENTARY SYSTEM ANSWERS ##
     ["16",
@@ -217,7 +210,7 @@ answers = [
     "dermis",
     "hypodermis",
     "true",
-    "false", ### dermis ###
+    "false", # dermis #
     "dermatologists"],
 
     ## 6 - LYMPHATIC SYSTEM ANSWERS ##
@@ -228,7 +221,7 @@ answers = [
     "tonsils",
     "thymus",
     "gallbladder",
-    "false",   #### Lymph flows in only one direction-upward toward the neck. ###
+    "false", # lymph flows in only one direction-upward toward the neck #
     "immunologists",
     "2"],
 
@@ -246,27 +239,27 @@ answers = [
 
     ## 8 - NERVOUS SYSTEM ANSWERS ##
     ["neurologists",
-    "false", ## central nervous system and peripheral nervous system ###
+    "false", # central nervous system and peripheral nervous system #
     "spinal cord",
     "true",
     "motor neurons",
-    "false", ## somatic and autonomic ###
+    "false", # somatic and autonomic #
     "glial cells",
-    "false", ## 100 trillion ###
+    "false", # 100 trillion #
     "axons",
-    "false"], ## physical stimuli ###
-
+    "false"], # physical stimuli #
+    
     ## 9 - REPRODUCTIVE SYSTEM ANSWERS ##
     ["fallopian tube",
     "true",
     "testes",
-    "false", ## morphogenesis ###
+    "false", # morphogenesis #
     "azoospermia",
     "true",
     "intersex",
-    "false", ## cervix ###
+    "false", # cervix #
     "urologists",
-    "false"], ## pap tests/smears and HPV tests ###
+    "false"], # pap tests/smears and HPV tests #
 
     ## 10 - RESPIRATORY SYSTEM ANSWERS ##
     ["lungs",
@@ -282,7 +275,7 @@ answers = [
 
     ## 11 - SKELETAL SYSTEM ANSWERS ##
     ["206",
-    "false", ### 300 bones ###
+    "false", # 300 bones #
     "teeth",
     "false",
     "bone marrow",
@@ -296,25 +289,18 @@ answers = [
     ["kidneys",
     "true",
     "nephrons",
-    "false", ### 1/2 liter ###
+    "false", # 1/2 liter #
     "d",
     "true",
     "b",
     "true",
     "b",
-    "false"] ### answer = urologists...nephrologists treat diseases of the kidney ###
- 
-]
-##### ANSWER ZONE ################################################
-## if you make changes in the question zone, don't forget to syncronise this zone (the variable and the list)!!!! 
-
-##### here are all variables of the answers. 
-
-##### this is the list of answers seperated by categories ###
+    "false"] # answer = urologists...nephrologists treat diseases of the kidney #
+]  
 
 ### CATEGORIES ######
 
-categories =["circulatory" ,  "digestive" , "endocrine" , "immune" , "integumentary" , "lymphatic" , "muscular" , "nervous" ,  "respiratory"  ,  "reproductive" ,  "skeletal" ,  "urinary"]
+categories =["circulatory" ,  "digestive" , "endocrine" , "immune" , "integumentary" , "lymphatic" , "muscular" , "nervous" ,  "reproductive" , "respiratory" ,  "skeletal" ,  "urinary"]
 greetings = [
             "Let's get to the heart of the matter...the circulatory system!" , 
             "All about the gut...on to the digestive system!",
@@ -329,9 +315,7 @@ greetings = [
             "You won't find these humerus...but on to the skeletal system." , 
             "Gotta go right now...to the urinary system."
             ]
-
-
-##### GLOBAL GAME SETTINGS ###############################################
+## GLOBAL GAME SETTINGS ##
 
 points = 0
 name = None
@@ -339,7 +323,7 @@ yes = ['Yes', 'yes', 'YES']
 no = ['No', 'no', 'NO']
 category = 0
 
-##### RESET ZONE #########################################################
+## RESET ZONE ##
 
 def game_reset():
     '''
@@ -352,9 +336,8 @@ def game_reset():
     points = 0
     name = None
 # end-function #
-    
 
-##### GAME INTRO ZONE ####################################################
+## GAME INTRO ZONE ##
 
 def game_intro():
     '''
@@ -368,22 +351,20 @@ def game_intro():
 
     while name == None:
         name = input("What's your name? ")
-        print("Your name is", name)
-        correct = input("Is that correct? ")
+        print("Welcome, "+name+", to the Human Anatomy Trivia Game!")
+        correct = input("Did we get your name right? ")
         if yes.count(correct) == True: ##"Yes" or ok == "yes" or ok == "YES":
             print("Perfect, let's move on!\n")
         else:
-            print("Eh? Try again and confirm with Yes!")
+            print("Eh?? Try again and confirm with Yes!")
             name = None
 
         list_categories() 
         start_system()
 
-
 # end-function #
-
+            
 ## GAME PLAY ZONE ##
-
 
 def print_play_status(x):
     '''
@@ -393,12 +374,13 @@ def print_play_status(x):
     global points
     print("At the moment your total points are", points)
     print("Challenge", x+1, "\n")
-#end-function#
 
+# end-function #
 
 def start_system() : 
-    system = int(input("Pick a category by typing a number (0 to exit): 1-12\n"))
-      if system == 0 : 
+    
+    system = int(input("Pick a category by typing a number (0 to exit) : 1-12\n"))
+    if system == 0 : 
         game_end()
     else :
         print(greetings[system - 1])
@@ -412,18 +394,15 @@ def start_category(cat) :
     
 def list_categories() : 
     
-  #loop through categories array and print categories
+  # loop through categories array and print categories #
   for c in categories : 
       print(categories.index(c) + 1 , " : " , c)
-      
-      
+
 def play_quest(x):
-    global category
     '''int -> int
     this functions asks the player question X, checks if player's answer is right and eventually changes the variable points.
     no examples needed
     '''
-      
     global points
     global questions
     global answers
@@ -433,7 +412,6 @@ def play_quest(x):
         points +=10
     else:
         print("Wrong! 0 points gained, the correct answer was:", answers[category - 1][x], ". Next question...\n")
-
     last_cat = len(questions[category - 1])
     if x == last_cat -1 : 
         global categories
@@ -449,22 +427,22 @@ def play_quest(x):
         else:
             list_categories() 
             start_system()
-    
-#end-function#
-        
+
+# end-function #
 
 def game_play():
     '''
     first : tell the player his current score and the current challenge number
     second: tell the play_quest-function how many and which questions it must asks the player.
     '''
-    
+   
     for x in range(len(questions[category - 1])):
         print_play_status(x)
         play_quest(x)
-#end-function#
 
-##### GAME END ZONE ########################################################
+# end-function #
+
+## GAME END ZONE ##
 
 def game_end():
     '''
@@ -493,11 +471,10 @@ def game_end():
         else:
             print("oh, just yes or no!")
             again = None
-#end-function#
-        
-    
-##### GAME CONTROL ZONE ####################################################
 
+# end-function #
+    
+## GAME CONTROL ZONE ##
 
 def game_control():
     '''
@@ -507,13 +484,11 @@ def game_control():
     game_intro()
     
     #start_system()
-    
-   # game_play()
-   # game_end()
-#end-function#
+   
+    #game_play()
+    #game_end()
+# end-function #
 
-
-##### FIRST GAME START ZONE ################################################
-
+## FIRST GAME START ZONE ##
 
 game_control()
