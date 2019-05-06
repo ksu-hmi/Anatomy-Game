@@ -143,7 +143,7 @@ questions = [
     "True or False: A normal, healthy bladder can hold up to 1 liter of urine comfortably for 2-5 hours.\n",
     "Which of the following are part of the renal system?\n(a) The urethra\n(b) The bladder\n(c) The kidneys\n(d) All of the above\n",
     "True or False: Small amounts of urine are emptied into the bladder from the ureters about every 10-15 seconds.\n",
-    "What organ stores urine until the brain signals the bladder that the person is ready to empty it?\n",
+    "What organ stores urine until the brain signals that it is ready to empty it?\n",
     "True or False: Circular muscles called sphincters close tightly around the opening of the bladder to prevent leakage into the urethra.\n",
     "Which of the following is NOT a disease of the urinary system?\n(a) Interstitial cystitis\n(b) Arteriosclerosis\n(c)Kidney Stones\n(d) Urinary tract infections\n",
     "True or False: Nephrologists treat problems of the urinary tract.\n"],
