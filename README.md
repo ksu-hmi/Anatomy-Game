@@ -1,3 +1,9 @@
-# Anatomy-Game
-A simple game covering the 12 systems of the body and its functions.
-Excellent! You got things started. -Prof. Thomas
+## Human Anatomy Trivia Game
+
+This will be a simple, text-base trivia game that covers the twelve systems of the body and its functions.  The program's simplicity allows the user to run this in Python IDLE.  Considering the creators' beginner's level expertise in Python, there is considerable focus on the following Python commands: define functions, user inputs, and if/elif/else.  Outside research includes thorough examinations of different code structures for inspiration and basic anatomy knowledge for the actual quiz portion.
+
+The target demographic is that of medical/nursing students looking to enhance their existing knowledge of the following twelve systems: circulatory, digestive, endocrine, immune, integumentary, lymphatic, muscular, nervous, reproductive, respiratory, skeletal, and urinary.  Each system will have a mix of true/false and fill-in-the blank/free form answer questions.
+
+This program will request the user's name and introduce the user to the twelve systems, with semi-personalized introductions to each system.  Points will be tallied and the user will be informed of his or her current score after each in/correct answer.  Upon completion of the ten questions, the user will have the ability to select another section to review or exit.  The user has the option to exit the game midway, if necessary.
+
+There are a few issues with the code that can be resolved and/or refined, if granted more time.  Such issues include but are not limited to: fix the while/break loop for an incorrect name input, return the list of categories after every round (whilst eliminating completed categories) for ease of selection, calculate the cumulative score of all completed categories, assign a percentage/letter grade with appropriate notes of encouragement at the end of the game, and allow variations/deviations from the answer to account for spelling and/or word order errors.
